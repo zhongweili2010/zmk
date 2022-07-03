@@ -22,7 +22,9 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/split/bluetooth/service.h>
 
 #define POS_STATE_LEN 16
-
+#define CONFIG_ZMK_SPLIT_BLE_PERIPHERAL_STACK_SIZE 1024
+#define CONFIG_ZMK_SPLIT_BLE_PERIPHERAL_POSITION_QUEUE_SIZE 10
+#define CONFIG_ZMK_SPLIT_BLE_PERIPHERAL_PRIORITY 5
 static uint8_t num_of_positions = ZMK_KEYMAP_LEN;
 static uint8_t position_state[POS_STATE_LEN];
 
